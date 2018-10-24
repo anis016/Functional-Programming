@@ -19,9 +19,8 @@ public class _22TransformingList {
         }
         System.out.println(upperCaseNames);
 
-
+        // functional way
         friends.stream().map(name -> upperCaseNames.add(name.toLowerCase()));
         System.out.println(upperCaseNames);
-
     }
 }
