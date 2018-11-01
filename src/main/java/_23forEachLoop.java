@@ -41,6 +41,9 @@ public class _23forEachLoop {
         friends.stream().map(name -> name.toUpperCase()).forEach(name -> upperCaseNames2.add(name));
         System.out.println(upperCaseNames2);
 
+        // mapping with stream().map()
+        friends.stream().map(name -> name.length()).forEach(name -> System.out.print(name + " "));
+
         // mapping with stream().map() and collecting in the end
         final List<String> upperCaseNames3 = friends
                 .stream()
