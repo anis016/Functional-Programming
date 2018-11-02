@@ -19,6 +19,10 @@ public class _23forEachLoop {
         });
         System.out.println(nameStartsWithN);
 
+        List<String> upper = new ArrayList<>();
+        friends.stream().map(String::toUpperCase).forEach(upper::add);
+        System.out.println(upper);
+
         // filtering with stream().filter()
         final List<String> nameStartsWithN2 = new ArrayList<>();
         friends.stream().filter(name -> name.startsWith("N")).forEach(name -> nameStartsWithN2.add(name));
